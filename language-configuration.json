@@ -26,5 +26,9 @@
         ["(", ")"],
         ["\"", "\""],
         ["'", "'"]
-    ]
+    ],
+    "indentationRules": {
+        "increaseIndentPattern": "^\\s*(data|proc|%macro)\\b.*;$|\\bdo\\s*;$|^\\bdo\\b[^;]+(\\b(to|over)\\b[^;]+)?;$|^\\s*((define|layout|method)\\b[^;]+|begingraph\b\\s*;|create\\s*table\b.*\bas)$",
+        "decreaseIndentPattern": "^\\s*(run|end|%mend|quit|enddata|endlayout|endgraph)\\s*;$"
+    }
 }
